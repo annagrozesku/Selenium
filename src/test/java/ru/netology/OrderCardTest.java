@@ -39,7 +39,7 @@ public class OrderCardTest {
    public void shouldMustBeSubmitted (){
       driver.get("http://localhost:9999/");
       driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Пупкин Василий");
-      driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+799956875223");
+      driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79995687523");
       driver.findElement(By.className("checkbox__box")).click();
       driver.findElement(By.className("button__text")).click();
       String expected = "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
